@@ -16,6 +16,9 @@
 # Misc
 /dev/block/by-name/misc /misc emmc defaults defaults
 
+# Product
+product /product ext4 ro,barrier=1 wait,check,logical,first_stage_mount
+
 # Recovery
 /dev/block/by-name/recovery /recovery emmc defaults defaults
 
@@ -27,6 +30,9 @@ system /system ext4 ro,barrier=1 wait,check,logical,first_stage_mount
 
 # System DLKM
 system_dlkm /system_dlkm ext4 ro,barrier=1 wait,check,logical,first_stage_mount
+
+# System EXT
+system_ext /system_ext ext4 ro,barrier=1 wait,check,logical,first_stage_mount
 
 # USB
 */block/sd* auto auto defaults voldmanaged=usb:auto,noemulatedsd
