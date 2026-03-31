@@ -1,0 +1,11 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "fstab.odroidn2",
+    src: "fstab.odroidn2",
+    vendor: true,
+    ramdisk_available: true,
+}
