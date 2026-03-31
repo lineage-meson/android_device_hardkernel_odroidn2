@@ -8,8 +8,11 @@
 include device/mainline/amlogic-common/BoardConfigAmlogic.mk
 
 # Bootloader
+BOARD_PREBUILT_BOOTLOADER=$(INSTALLED_BOOTLOADER_TARGET)
 TARGET_BOOTLOADER_BOARD_NAME := odroidn2
-TARGET_NO_BOOTLOADER := true
+TARGET_BOOTLOADER_CFG := $(DEVICE_PATH)/bootloader.cfg
+TARGET_BOOTLOADER_SOURCE := external/u-boot
+TARGET_NO_BOOTLOADER := $(strip $(if $(wildcard $(TARGET_BOOTLOADER_SOURCE)/Makefile),false,true))
 
 # Kernel
 AMLOGIC_ANDROIDBOOT_PARAMS += \
