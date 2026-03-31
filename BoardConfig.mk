@@ -19,6 +19,8 @@ AMLOGIC_ANDROIDBOOT_PARAMS += \
     androidboot.hardware=odroidn2 \
     androidboot.boot_devices=soc/ffe07000.mmc
 BOARD_BOOT_HEADER_VERSION := 2
+BOARD_DTB_CFG := $(DEVICE_PATH)/odroidn2-dtb.cfg
+BOARD_DTBO_CFG := $(DEVICE_PATH)/odroidn2-dtbo.cfg
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_CMDLINE := \
     $(AMLOGIC_ANDROIDBOOT_PARAMS) \
@@ -37,6 +39,9 @@ BOARD_MKBOOTIMG_ARGS += \
     --ramdisk_offset $(BOARD_RAMDISK_OFFSET) \
     --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_OFFSET := 0x4000000
+TARGET_DTB_LIST_WILDCARD := \
+    amlogic/meson-g12b-odroid-n2 \
+    amlogic/meson-g12b-odroid-n2-plus
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
