@@ -15,6 +15,10 @@ $(call inherit-product, device/mainline/amlogic-common/amlogic.mk)
 # A/B
 AB_OTA_UPDATER := false
 
+# Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.audio.primary.card_name=ODROIDN2
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     config.disable_bluetooth=true
