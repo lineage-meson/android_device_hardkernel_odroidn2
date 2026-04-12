@@ -15,6 +15,10 @@ $(call inherit-product, device/mainline/amlogic-common/amlogic.mk)
 # A/B
 AB_OTA_UPDATER := false
 
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+    config.disable_bluetooth=true
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.odroidn2 \
