@@ -4,6 +4,7 @@
 #
 
 # Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, device/google/atv/products/atv_base.mk)
 
 # Inherit from device
