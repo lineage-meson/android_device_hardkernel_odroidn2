@@ -6,14 +6,12 @@
 
 DEVICE_PATH := device/hardkernel/odroidn2
 
+AB_OTA_UPDATER := false
 TARGET_AMLOGIC_SOC := s922x
 include device/mainline/amlogic-common/optional/options.mk
 
 # Inherit from mainline/amlogic-common
 $(call inherit-product, device/mainline/amlogic-common/amlogic.mk)
-
-# A/B
-AB_OTA_UPDATER := false
 
 # Init
 PRODUCT_PACKAGES += \
