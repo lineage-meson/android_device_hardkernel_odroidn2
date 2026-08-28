@@ -11,7 +11,7 @@ PRODUCT_HOST_PACKAGES += \
     aml_image_packer
 
 ## Platform
-TARGET_AMLOGIC_SOC := sm1
+TARGET_AMLOGIC_SOC := g12b
 
 ## Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
