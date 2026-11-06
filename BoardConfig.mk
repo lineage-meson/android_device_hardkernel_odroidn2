@@ -15,7 +15,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 
 ## Kernel
 TARGET_KERNEL_PLATFORM_TARGET := odroidc4
-TARGET_KERNEL_SOURCE := vendor/hardkernel/odroidc4-build
+TARGET_KERNEL_SOURCE := vendor/amlogic/devices/odroidc4
 
 ## Kernel modules
 BOOT_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/ramdisk.modules.load))
