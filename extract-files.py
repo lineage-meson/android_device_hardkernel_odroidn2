@@ -11,15 +11,11 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 
-namespace_imports = [
-    'vendor/amlogic/g12-common',
-]
-
 module = ExtractUtilsModule(
     'odroidn2',
     'hardkernel',
     add_firmware_proprietary_file=True,
-    namespace_imports=namespace_imports,
+    skip_main_proprietary_file=True,
 )
 
 if __name__ == '__main__':
