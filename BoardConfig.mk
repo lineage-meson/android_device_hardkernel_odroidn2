@@ -3,19 +3,19 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/hardkernel/odroidc4
+DEVICE_PATH := device/hardkernel/odroidn2
 
 ## Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := odroidc4
+TARGET_BOOTLOADER_BOARD_NAME := odroidn2
 
 ## DTB
-TARGET_DTB_NAME := sm1_s905x3_odroidc4
+TARGET_DTB_NAME := sm1_s905x3_odroidn2
 TARGET_DTBO_NAME := android_overlay_dt
 BOARD_KERNEL_SEPARATED_DTBO := true
 
 ## Kernel
-TARGET_KERNEL_PLATFORM_TARGET := odroidc4
-TARGET_KERNEL_SOURCE := vendor/amlogic/devices/odroidc4
+TARGET_KERNEL_PLATFORM_TARGET := odroidn2
+TARGET_KERNEL_SOURCE := vendor/amlogic/devices/odroidn2
 
 ## Kernel modules
 BOOT_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/ramdisk.modules.load))
@@ -36,4 +36,4 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 include device/amlogic/g12-common/BoardConfigCommon.mk
 
 ## Include the proprietary BoardConfig makefile
-include vendor/hardkernel/odroidc4/BoardConfigVendor.mk
+include vendor/hardkernel/odroidn2/BoardConfigVendor.mk

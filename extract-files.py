@@ -22,7 +22,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'odroidc4',
+    'odroidn2',
     'hardkernel',
     add_firmware_proprietary_file=True,
     blob_fixups=blob_fixups,
@@ -36,8 +36,8 @@ if __name__ == '__main__':
     with open(path) as f:
         content = f.read()
     content = re.sub(
-        r'ifeq \(\$\(TARGET_DEVICE\),odroidc4\)',
-        'ifneq ($(filter odroidc4 odroidc4_tab,$(TARGET_DEVICE)),)',
+        r'ifeq \(\$\(TARGET_DEVICE\),odroidn2\)',
+        'ifneq ($(filter odroidn2 odroidn2_tab,$(TARGET_DEVICE)),)',
         content,
     )
     with open(path, 'w') as f:

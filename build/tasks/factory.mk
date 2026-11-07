@@ -3,10 +3,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-ifneq ($(filter odroidc4 odroidc4_car odroidc4_tab,$(TARGET_DEVICE)),)
+ifneq ($(filter odroidn2 odroidn2_car odroidn2_tab,$(TARGET_DEVICE)),)
 
-FACTORY_PATH := device/hardkernel/odroidc4/factory
-VENDOR_PATH := vendor/hardkernel/odroidc4
+FACTORY_PATH := device/hardkernel/odroidn2/factory
+VENDOR_PATH := vendor/hardkernel/odroidn2
 
 PRODUCT_INSTALL_OUT := $(PRODUCT_OUT)/aml_install
 PRODUCT_UPGRADE_OUT := $(PRODUCT_OUT)/aml_upgrade

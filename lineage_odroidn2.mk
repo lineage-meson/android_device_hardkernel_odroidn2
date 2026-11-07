@@ -17,15 +17,15 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_BRAND := hardkernel
-PRODUCT_DEVICE := odroidc4
+PRODUCT_DEVICE := odroidn2
 PRODUCT_GMS_CLIENTID_BASE := android-askey-tv
 PRODUCT_MANUFACTURER := hardkernel
-PRODUCT_MODEL := odroid c4
-PRODUCT_NAME := lineage_odroidc4
+PRODUCT_MODEL := odroid n2
+PRODUCT_NAME := lineage_odroidn2
 
 PRODUCT_GMS_CLIENTID_BASE := android-droid-tv
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="adt3-user 13 TTT1.230205.001 9565391 release-keys" \
     BuildFingerprint=ADT-3/adt3/adt3:13/TTT1.230205.001/9565391:user/release-keys \
-    SystemName=odroidc4
+    SystemName=odroidn2
